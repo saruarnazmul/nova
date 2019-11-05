@@ -1,0 +1,93 @@
+@font-face{
+    font-family: 'Roboto', sans-serif;
+}
+.nova{
+    font-family: 'Roboto', sans-serif;
+    padding: 80px;
+}
+ul li {
+    float: left;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+}
+/* for tab button */
+.tab-button{
+    padding: 15px 25px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.tab-button a{
+    color: grey !important;
+    font-size: 16px;
+    font-weight: 500;
+}
+.tab-button a:hover{
+    text-decoration: none;
+    color: grey !important;
+}
+/* for tab button */
+
+/* first tab button start */
+.fin-btn{
+    position: absolute;
+    top: 15%;
+    margin-left: 100%;
+    padding: 10px 35px;
+    border-radius: 10px;
+    transition: 0.7s;
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(124, 127, 133, 1) 0%, rgba(124, 127, 133, 1) 18%, rgba(79, 84, 89, 1) 100%) repeat scroll 0 0;
+/*     box-shadow: 1px 2px 3px #454b4e; */
+}
+.fin-btn:hover{
+    color: grey;
+}
+.nova-btn{
+    top: 30%;
+    padding: 10px 49px;
+}
+
+/* first tab button end */
+
+/* for second tab button start */
+.c-r{
+    color: #fff !important;
+    font-size: 16px;
+    font-weight: 500;
+}
+.c-r:hover{
+ text-decoration: none;
+ color: grey !important;
+}
+/* for second tab button end */
+
+/* toggle button */
+.canecode_select{
+    position: absolute;
+    margin-top: -34%;
+    margin-left: 107%;
+    border: 1px solid grey;
+}
+.canecode_select.is_on{
+    border: 2px solid #750EDA;
+    background: #750EDA;
+}
+/* toggle button */
+.mask{
+    position: absolute;
+    margin-top: -33%;
+    margin-left: 100%;
+    font-size: 18px;
+}
+.active{
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(154, 188, 255, 1) 0%, rgba(62, 175, 250, 1) 100%) repeat scroll 0 0;
+   /*  box-shadow: 1px 2px 3px #5298ce; */
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+.active a{
+    color: #fff!important;
+}

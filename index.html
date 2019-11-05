@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- google fonts  start-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+
+    <!-- google fonts  end-->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/canecode_switch.css">
+    <link rel="stylesheet" href="css/tab-style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+<!--    <link rel="stylesheet" href="css/style.css">-->
+    <title>Nova Lens</title>
+</head>
+
+<body>
+<section class="nova">
+    <div class="container">
+        <div class="row">
+            <div class=" col-xl-8 col-md-10 col-sm-12 col-12">
+                <div class='tabs'>
+                    <ul>
+                        <li class="tab-button f-btn"><a href="#tab-1">Finished Vision Lens</a></li>
+                        <li class="tab-button rx-btn"><a href="#tab-2">RX Single Vision</a></li>
+               </ul>
+                    <div id='tab-1' >            
+                      <div class='tabs'>
+                        <ul>
+                        <li class="fin-btn"><a href="#tab-3" class="c-r">Standard</a></li>
+                         <li class="fin-btn nova-btn" ><a href="#tab-4" class="c-r">Nova</a></li>
+                        </ul>
+                         
+                    <div id='tab-3'>
+                        <div class="this_shows_when_switch_is_on">
+                         <img src="images/standard-fsv.png" alt="" class="img-fluid">
+                        </div>
+                         <div class="this_shows_when_switch_is_off">
+                         <img src="images/standard-fsv-nomask.png" alt="" class="img-fluid">
+                        </div>
+                        
+                   </div>
+                        <div id='tab-4'>
+                        <div class="this_shows_when_switch_is_off">
+                         <img src="images/Nova-FSV-nomask.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="this_shows_when_switch_is_on">
+                         <img src="images/Nova-FSV.png" alt="" class="img-fluid">
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- button for Rx vision glass start -->
+                    <div id='tab-2'>
+                    <div class='tabs'>
+                    <ul>
+                        <li class="fin-btn" ><a href="#tab-5" class="c-r">Standard</a></li>
+                         <li class="fin-btn  nova-btn"><a href="#tab-6" class="c-r">Nova</a></li>
+                    </ul>
+                     <div id='tab-5'>
+                         <div class="this_shows_when_switch_is_off">
+                         <img src="images/Standard-Rx-SV_nomask.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="this_shows_when_switch_is_on">
+                         <img src="images/Standard-Rx-SV.png" alt="" class="img-fluid">
+                        </div>
+                   </div>
+                        <div id='tab-6'>
+                        <div class="this_shows_when_switch_is_off">
+                         <img src="images/Nova-plus-Rx-SV_nomask.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="this_shows_when_switch_is_on">
+                         <img src="images/Nova-plus-Rx-SV.png" alt="" class="img-fluid">
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- button for Rx vision glass end -->
+
+    
+                </div>
+               <!-- mask start -->
+              <div class="r-btn">
+                  <span class="mask">Mask</span>
+                  <input id="example" type="checkbox" name="switch" class="toggle-btn">
+              </div>
+              <!-- mask end -->
+             </div>
+        </div>
+    </div>
+</section>
+    
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/canecode_switch.js"></script>
+    <script src="js/jquery.tabslet.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.tabs').tabslet();
+        });
+        
+        $(function(){
+  canecode_switch("#example",".this_shows_when_switch_is_off", ".this_shows_when_switch_is_on");
+});
+    </script>
+
+</body>
+
+</html>
